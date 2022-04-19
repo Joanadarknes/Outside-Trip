@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Outside Trip</title>
+    <link rel="stylesheet" href="./splide.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/942808131015155783/949071699167576104/aviao_1.png">
+    <script src="./splide.min.js"></script>
+    <script src="./js/funcoes.js"></script>
+    
+    </head>
+    <body>
+        <header>
+            <section>
+                <div class="carrinho-caixa">
+                    <a href="./index2.html"><img class="carrinho-img" src="https://cdn.discordapp.com/attachments/942808131015155783/949069077828223016/bilhete.png" alt="carrinho">
+                    <div class="CARRINHO-T">
+                    <li><a href="./index2.html">C</a></li>
+                  
+                </a>
+                </div>
+            </section>
+                <div class="menu-toggle" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="overlay"></div>
+                <div class="container"> 
+                    <nav>
+                        <h1 class="brand"><a href="index.html">Out<span>s</span>ide trip</a></h1>
+                        <ul>
+                            <li><a href="#">Cards</a></li>
+                            <li><a href="#hotel">Hotéis</a></li>
+                            <li><a href="#passagem">Passagens</a></li>
+                            <li><a href="#passagem">carrinho</a></li>
+                            <li><a onclick="window.location.href = 'index.html#loginmodel'">Login</a></li>
+                        </ul>
+                        <div id="loginmodel" class="loginmodel">
+                            <div class="popup">
+                                <img class="imgu" src="https://cdn.discordapp.com/attachments/942808131015155783/953823866436866078/icon-usuario-removebg-preview.png" alt="img-usuario">
+                                <h2>Login</h2>
+                                <div class="content">
+                                    <section>
+                                        <div class="pop">
+                                          
+                                            <input class="form-v-001" id="usuario_input" placeholder="Usuario">
+                                            <input class="form-v-001" id="senha_input" type="password" placeholder="senha">
+                                            
+                                        </div>
+                                        <button class="btnlogin" onclick="window.location.href = 'index.html#entrar'" >Entrar</button>
+                                        <div class="remember">
+                                        <input  type="checkbox" id="remeber-me">
+                                        <label for="remember-me"> Remember-me </label>
+                                      <div class ="senhaab"><label  href="#" for="esqueci-a-senha">Esqueci a senha</label> </div>
+                                      
+                                     </div>
+                                     
+                                    </section>
+                                </div>
+                                <a class="close" href="#">&times;</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <form>
+                    <section class="Selecionar">
+                    <div>
+                    <label class="origem" for="text">Origem:</label>
+                    <label class="destino" for="text">Destino:</label></div>
+                    <input  type="text" placeholder="De onde vai Sair?" name="nome" required>
+                    <input  type="text"  placeholder="Para onde você vai?">
+                   <label class="dataID" for="data">Data de ida</label>
+                    <input type="date" id="data" name="dataIda">
+                    <label class="dataID" for="data">Data de volta</label>
+                    <input type="date" id="data" name="dataVolt">
+                    <select name="format" id="format" >
+                        <option value="pessoa">1 Passageiro</option>
+                        <option value="pessoa">2 Passageiros</option>
+                        <option value="pessoa">3 Passageiros</option>
+                        <option value="pessoa">4 Passageiros</option>
+                        <option value="pessoa">5 Passageiros</option>
+                        <option value="pessoa">6 Passageiros</option>
+                        <option value="pessoa">7 Passageiros</option>
+                        <option value="pessoa">8 Passageiros</option>
+                        <option value="pessoa">9 Passageiros</option>
+                    </select>
+                    <select name="format" id="format" >
+                        <option value="pessoa">0 Crianças</option>
+                        <option value="pessoa">1 Criança</option>
+                        <option value="pessoa">2 Crianças</option>
+                        <option value="pessoa">3 Crianças</option>
+                        <option value="pessoa">4 Crianças</option>
+                        <option value="pessoa">5 Crianças</option>
+                        <option value="pessoa">6 Crianças</option>
+                        <option value="pessoa">7 Crianças</option>
+                        <option value="pessoa">8 Crianças</option>
+                        <option value="pessoa">9 Crianças</option>
+                    </select>
+                    <button>
+                        <p>Buscar voos</p>
+                    </button>
+                </form>
+            </section>
+            <h2 class="Slogan">Relaxe … Você está com a gente!</h2>
+            <h2 class="Slogan2"> Nós simplificamos</h2>
+        </header>
+       
+
+
+
+        <h2 class="chamadopsg" id="passagem">Ofertas imperdíveis de voos internacionais</h2>
+        <div class="splide" >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="box">
+                    <!--img-box---------->
+                    <div class="slide-img">
+                    <img alt="1" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80">
+                    <!--overlayer---------->
+                    <div class="overlay">
+                    <!--buy-btn------>	
+                    <a href="./index2.html" class="buy-btn">Compre já</a>	
+                    </div>
+                    </div>
+                    <!--detail-box--------->
+                    <div class="detail-box">
+                    <!--type-------->
+                    <div class="type">
+                    <a href="#">frança - paris </a>
+                    <span>valor economica:</span>
+                    </div>
+                    <!--price-------->
+                    <a href="#" class="price">R$3.300.11</a>
+                      
+                    </div>
+                    
+                    </div>		
+        
+                </li>
+                <li class="splide__slide"> <div class="box">
+                  <!--img-box---------->
+                  <div class="slide-img">
+                  <img alt="1" src="https://images.unsplash.com/photo-1524047934617-cb782c24e5f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                  <!--overlayer---------->
+                  <div class="overlay">
+                  <!--buy-btn------>	
+                  <a href="./index2.html" class="buy-btn">Compre já</a>	
+                  </div>
+                  </div>
+                  <!--detail-box--------->
+                  <div class="detail-box">
+                  <!--type-------->
+                  <div class="type">
+                  <a href="#">holanda - amisterdam</a>
+                  <span>valor economica:</span>
+                  </div>
+                  <!--price-------->
+                  <a href="#" class="price">R$3.100.60</a>
+                    
+                  </div>
+                  
+                  </div>		
+        </li>
+                <li class="splide__slide"> <div class="box">
+                  <!--img-box---------->
+                  <div class="slide-img">
+                  <img alt="1" src="https://images.unsplash.com/photo-1541336032412-2048a678540d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+                  <!--overlayer---------->
+                  <div class="overlay">
+                  <!--buy-btn------>	
+                  <a href="./index2.html" class="buy-btn">Compre já</a>	
+                  </div>
+                  </div>
+                  <!--detail-box--------->
+                  <div class="detail-box">
+                  <!--type-------->
+                  <div class="type">
+                  <a href="#">EUA - nova iorque</a>
+                  <span>valor economica:</span>
+                  </div>
+                  <!--price-------->
+                  <a href="#" class="price">R$2.900.67</a>
+                    
+                  </div>
+                  
+                  </div>		
+        </li>
+        <li class="splide__slide"> <div class="box">
+          <!--img-box---------->
+          <div class="slide-img">
+          <img alt="1" src="https://images.unsplash.com/photo-1581091287680-7fa25bf39e7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+          <!--overlayer---------->
+          <div class="overlay">
+          <!--buy-btn------>	
+          <a href="./index2.html" class="buy-btn">Compre já</a>	
+          </div>
+          </div>
+          <!--detail-box--------->
+          <div class="detail-box">
+          <!--type-------->
+          <div class="type">
+          <a href="#">canada - ottawa</a>
+          <span>valor economica:</span>
+          </div>
+          <!--price-------->
+          <a href="#" class="price">R$5.100.11</a>
+            
+          </div>
+          
+          </div>		
+        </li>
+        <li class="splide__slide"> <div class="box">
+          <!--img-box---------->
+          <div class="slide-img">
+          <img alt="1" src="https://images.unsplash.com/photo-1544092683-c0c9ebb368e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=851&q=80">
+          <!--overlayer---------->
+          <div class="overlay">
+          <!--buy-btn------>	
+          <a href="./index2.html" class="buy-btn">Compre já</a>	
+          </div>
+          </div>
+          <!--detail-box--------->
+          <div class="detail-box">
+          <!--type-------->
+          <div class="type">
+          <a href="#">Dubai</a>
+          <span>valor economica:</span>
+          </div>
+          <!--price-------->
+          <a href="#" class="price">R$4.800.48</a>
+            
+          </div>
+          
+          </div>		
+        </li>
+        <li class="splide__slide"> <div class="box">
+          <!--img-box---------->
+          <div class="slide-img">
+          <img alt="1" src="https://images.unsplash.com/photo-1593839154339-377e24b3ba32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=904&q=80">
+          <!--overlayer---------->
+          <div class="overlay">
+          <!--buy-btn------>	
+          <a href="./index2.html" class="buy-btn">Compre já</a>		
+          </div>
+          </div>
+          <!--detail-box--------->
+          <div class="detail-box">
+          <!--type-------->
+          <div class="type">
+          <a href="#">japao - tokyo </a>
+          <span>valor economica:</span>
+          </div>
+          <!--price-------->
+          <a href="#" class="price">R$5.500.70</a>
+            
+          </div>
+          
+          </div>		
+        </li>
+              </ul>
+            </div>
+          </div>
+           
+                    <section>
+                            <div class="containercard">           
+                                <div class="cardi">
+                                    <div class="contentcard">
+                                        <h2>01</h2>
+                                        <h3>card um</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                        <a href="#">mais infomaçoes</a>
+                            
+                                    </div>
+                            
+                                </div>
+                            <div class="containercard">
+                                <div class="cardi">
+                                    <div class="contentcard">
+                                        <h2>02</h2>
+                                        <h3>card dois</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                        <a href="#">mais infomaçoes</a>
+                                    </div>
+                                </div>
+                                <div class="cardi">
+                                    <div class="contentcard">
+                                        <h2>03</h2>
+                                        <h3>card tres</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                        <a href="#">mais infomaçoes</a>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                    </section>
+                    <script type="text/javascript" src="./vanilla-tilt.js"></script>
+                    <script >
+                        VanillaTilt.init(document.querySelectorAll(".cardi"),{
+                            max: 25,
+                            speed: 400,
+                            glare: true,
+                            "max-glare":1,
+                        });
+                    </script>
+    </body>
+    <script>
+        var splide = new Splide( '.splide', {
+        type    : 'loop',
+        perPage : 3,
+        autoplay: true,
+      } );
+      
+      splide.mount();
+
+        </script>
+    
+
+</html>
+
+
