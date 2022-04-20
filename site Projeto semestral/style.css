@@ -566,7 +566,7 @@ button-scroll:hover{
 
 
    
-   button-scroll, span:nth-child(1) {
+   button-scroll, .sp1 {
 	top: 0;
 	left: -100%;
 	width: 100%;
@@ -574,12 +574,12 @@ button-scroll:hover{
 	background: linear-gradient(90deg, transparent, #ae00ff);
    }
    
-   button-scroll:hover span:nth-child(1) {
+   button-scroll:hover .sp1 {
 	left: 100%;
 	transition: 0.7s;
    }
    
-   button-scroll .span:nth-child(3) {
+   button-scroll .sp3 {
 	bottom: 0;
 	right: -100%;
 	width: 100%;
@@ -587,13 +587,13 @@ button-scroll:hover{
 	background: linear-gradient(90deg, transparent, #001eff);
    }
    
-   button-scroll:hover .span:nth-child(3) {
+   button-scroll:hover .sp3 {
 	right: 100%;
 	transition: 0.7s;
 	transition-delay: 0.35s;
    }
    
-   button-scroll .span:nth-child(2) {
+   button-scroll .sp2 {
 	top: -100%;
 	right: 0;
 	width: 2px;
@@ -601,13 +601,13 @@ button-scroll:hover{
 	background: linear-gradient(180deg, transparent, #ae00ff);
    }
    
-   button-scroll:hover .span:nth-child(2) {
+   button-scroll:hover .sp2 {
 	top: 100%;
 	transition: 0.7s;
 	transition-delay: 0.17s;
    }
    
-   button-scroll .span:nth-child(4) {
+   button-scroll .sp4 {
 	bottom: -100%;
 	left: 0;
 	width: 2px;
@@ -615,7 +615,7 @@ button-scroll:hover{
 	background: linear-gradient(360deg, transparent, #001eff);
    }
    
-   button-scroll:hover .span:nth-child(4) {
+   button-scroll:hover .sp4 {
 	bottom: 100%;
 	transition: 0.7s;
 	transition-delay: 0.52s;
@@ -629,7 +629,7 @@ button-scroll:hover{
 	transition: 0.1s;
    }
    
-   button-scroll:active span:nth-child(1) 
+   button-scroll:active .sp1
    span:nth-child(2) 
    span:nth-child(2) 
    span:nth-child(2) {
