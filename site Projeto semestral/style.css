@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Indie+Flower&family=Pacifico&family=Square+Peg&display=swap');
 
 	*{
 		
@@ -213,7 +214,6 @@
 	left: 0;
 	top: 0;
 	bottom: 0;
-
 	transition: opacity 650ms;
 	transform: scale(0);
 	opacity: 0;
@@ -507,7 +507,13 @@
     }
 }
 
-
+/* CARDS LEGAIS */
+.contentcard{
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 .containercard{
     position: relative;
     display:flex;
@@ -516,126 +522,98 @@
 	max-width: 1200px;
 	flex-wrap: wrap;
 	z-index: 1;
+	
 }
- .cardi{
+.slogan-cards{
+	color: white;
+	text-align: center;
+	margin: 10px auto;
+	font-size: 30px;
+
+
+	text-transform: uppercase;
+}
+.contentcard h2{
+	color: white;
+    font-size: 80px;
+    justify-self: flex-start;
+    width: 100%;
+    padding: 14px;
+}
+
+.contentcard h3{
+	color: white
+	;
+}
+
+.contentcard p{
+	padding: 10px ;
+	font-size: 12px;
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	
+}
+.containercard > div{
+	display: flex;
+}
+
+.cardi{
 position:relative;
 width: 280px;
 height: 400px;
 margin: 30px;
 border-radius: 15px;
-background-image: url("https://th.bing.com/th/id/OIP.AjsG3POITA0lgVleK-CxFgHaJQ?pid=ImgDet&rs=1");
+background-image: url("https://images.unsplash.com/photo-1649520208876-34e14eb5a5c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80");
 overflow: hidden;
+box-shadow: 15px 15px 30px rgb(25, 25, 25),
+             -15px -15px 30px rgb(60, 60, 60);
 display: flex;
 justify-content: center;
 align-items: center;
 border-top: 1px solid rgb(188, 188, 188);
 }
 .containercard .cardi:hover .contentcard{
-	transform: translatey(0px);
-	opacity: 1;
+transform: translatey(0px);
+opacity: 1;
 }
 
 .cardes{
-	display: flex;
+display: flex;
 }
-
-
-.button-scroll{
-	margin-left: 95%;
-	position: relative;
-	padding: 1em 1.8em;
-	outline: none;
-	border: 1px solid #303030;
-	background: #212121;
-	color: #ae00ff;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 15px;
-	overflow: hidden;
-	transition: 0.2s;
-	border-radius: 20px;
-	cursor: pointer;
-	font-weight: bold;
-
+.button-scroll {
+margin-left: 92%;
+--glow-color: rgb(217, 176, 255);
+--glow-spread-color: rgba(191, 123, 255, 0.781);
+--enhanced-glow-color: rgb(231, 206, 255);
+--btn-color: rgb(100, 61, 136);
+border: .20em solid var(--glow-color);
+padding: 1em 2em;
+color: var(--glow-color);
+font-size: 15px;
+font-weight: bold;
+background-color: var(--btn-color);
+border-radius: 1em;
+outline: none;
+box-shadow: 0 0 1em .25em var(--glow-color),
+0 0 4em 1em var(--glow-spread-color),
+inset 0 0 .75em .25em var(--glow-color);
+text-shadow: 0 0 .5em var(--glow-color);
+position: relative;
+transition: all 0.3s;
 }
-
-button-scroll:hover{
-	box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
-	transition-delay: 0.6s;
+.button-scroll:hover {
+color: var(--btn-color);
+background-color: var(--glow-color);
+box-shadow: 0 0 1em .25em var(--glow-color),
+0 0 4em 2em var(--glow-spread-color),
+inset 0 0 .75em .25em var(--glow-color);
 }
-
-
    
-   button-scroll, .sp1 {
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 2px;
-	background: linear-gradient(90deg, transparent, #ae00ff);
-   }
-   
-   button-scroll:hover .sp1 {
-	left: 100%;
-	transition: 0.7s;
-   }
-   
-   button-scroll .sp3 {
-	bottom: 0;
-	right: -100%;
-	width: 100%;
-	height: 2px;
-	background: linear-gradient(90deg, transparent, #001eff);
-   }
-   
-   button-scroll:hover .sp3 {
-	right: 100%;
-	transition: 0.7s;
-	transition-delay: 0.35s;
-   }
-   
-   button-scroll .sp2 {
-	top: -100%;
-	right: 0;
-	width: 2px;
-	height: 100%;
-	background: linear-gradient(180deg, transparent, #ae00ff);
-   }
-   
-   button-scroll:hover .sp2 {
-	top: 100%;
-	transition: 0.7s;
-	transition-delay: 0.17s;
-   }
-   
-   button-scroll .sp4 {
-	bottom: -100%;
-	left: 0;
-	width: 2px;
-	height: 100%;
-	background: linear-gradient(360deg, transparent, #001eff);
-   }
-   
-   button-scroll:hover .sp4 {
-	bottom: 100%;
-	transition: 0.7s;
-	transition-delay: 0.52s;
-   }
-   
-   button-scroll:active {
-	background: #ae00af;
-	background: linear-gradient(to top right, #ae00af, #001eff);
-	color: #bfbfbf;
-	box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
-	transition: 0.1s;
-   }
-   
-   button-scroll:active .sp1
-   span:nth-child(2) 
-   span:nth-child(2) 
-   span:nth-child(2) {
-	transition: none;
-	transition-delay: none;
-   }
+.button-scroll:active {
+box-shadow: 0 0 0.6em .25em var(--glow-color),
+0 0 2.5em 2em var(--glow-spread-color),
+inset 0 0 .5em .25em var(--glow-color);
+}
 
 /* SOBRE NÓS */
 
