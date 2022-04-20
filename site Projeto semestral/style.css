@@ -2,9 +2,9 @@
 
 	*{
 		
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
+		margin: 0 auto;
+		padding: 0 auto;
+		
 		
 	}
 	
@@ -20,8 +20,6 @@
 	}
 		/* incio e menu */
 	header{
-	
-		
 		width: 100%;
 		height: 100vh;
 		background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("https://images.unsplash.com/photo-1504461154005-31b435e687ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80") center no-repeat ;
@@ -68,7 +66,8 @@
 	}
 	
 	.brand span{
-		color: rgb(119, 133, 255);
+		
+		color:  rgb(122, 54, 241);
 	}
 	
 	nav ul{
@@ -115,7 +114,7 @@
 		position: absolute;
 		width: 100%;
 		height: 2px;
-		background-color: rgb(119, 133, 255);
+		background-color:  rgb(90, 20, 255);
 		left: 0;
 		transform: scaleX(0);
 		transition: all .5s;
@@ -131,8 +130,7 @@
 	transform-origin: right;
 	}
 	.Selecionar{
-	margin-left: -30px;
-	margin-top: 100px;
+	margin: 50px;
 	}
 	.origem{
 	margin: 10px;
@@ -140,7 +138,7 @@
     color: white;
 	}
 	.destino{
-	margin: 100px;
+	margin: 90px;
 	font-size: 20px;
 	color: white;
 	}
@@ -148,15 +146,16 @@
 	height: 40px;
 	width: 140px;
 	outline:unset ;
-	border: 2px solid rgba(119, 133, 255, 0.856);
+	border: var(--clr-neon) 2px solid;
+
     margin: 10px;
 	background:  rgba(255, 255, 255, 0.6);
 	border-radius: 10px;
 	
 }
-select{
+	select{
 
-	border: 2px solid rgba(119, 133, 255, 0.856);
+	border: var(--clr-neon) 2px solid;
 	background:  rgba(255, 255, 255, 0.6);
 	outline: none;
 	height: 40px;
@@ -166,36 +165,46 @@ select{
 	.dataID{
     color: rgb(255, 255, 255);
 	font-size: 20PX;
+	margin-right: 65px;
 	}
-	button{
-		color: #ffffff;
-		border: 2px solid rgba(255, 255, 255, 0.856);
+		
+	:root {
+		--clr-neon:  rgb(90, 20, 255);
+		--clr-bg: hsl(323 21% 16%)
+	}
+	
+	.neons {
+		margin: 10px;
+		width: 180px;
+		font-size: 25px;
+		justify-content: center;
+		align-items: center;
 		cursor: pointer;
-		border-radius: 10px;
-		font-size: 18px;
-		background:rgba(119, 133, 255, 0.856);
-		overflow: hidden;
-		position: relative;
-		height: 40px;
-		width: 110px;
-		margin-left: 10px;
-		font-family: sans-serif;
+		text-decoration: none;
+		color: white;
+		border: var(--clr-neon) 2px solid;
+		background-color: transparent;
+		border-radius: 0.25em;
+		text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+		box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+		transition: all 0.5s
 	}
-
-	button:hover{
-	background:rgba(255, 255, 255, 0.568);
+	
+	.neons:hover {
+		background-color: var(--clr-neon);	
 	}
 
 
 
 	.Slogan{
-	margin-top: 80px;
+	margin-left: 50px;
     font-size: 70px;
 	color: rgba(255, 255, 255, 0.767);
 	}
 	.Slogan2{
+		margin-left: 50px;
 		font-size: 70px;
-		color:  rgba(119, 133, 255, 0.856);
+		color:  rgb(90, 20, 255);
 	}
 	.overlay{
 	background-color: rgba(0,0,0,.95);
@@ -270,9 +279,9 @@ select{
 
 	}
 	.chamadopsg{
+		color: white;
 		font-size: 60px;
 		text-align: center;
-		margin-top: 100px;
 	    font-family: sans-serif;
 
 			}
@@ -397,81 +406,95 @@ select{
 		align-items: center;
 	}
 	
-	/* hotel */
+	/* LOGIN */
 
-	#login-bg{
-		top :10px;
-		height: 100%;
-		width: 100%;
+	.loginmodel {
 		position: fixed;
-		background-color: rgba(0, 0, 0, .5);
-		z-index: 200;
-		align-items: center;
-		justify-content: center;
-		display: none;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(30, 30, 30, 0.7);
+		transition: opacity 500ms;
+		visibility: hidden;
+		opacity: 0;
+		z-index: 1;
 	}
-
-	#login-card {
-		width: 40%;
-		background-color: rgb(0, 0, 0);
-		border-radius: 10px;
-		padding: 40px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		position: relative;
-		gap: 20px;
-	}
-
-	.form-title {
-		font-family: sans-serif;
-		font-size: 21px;
-		color: white;
-	}
-
-
-	.form-input {
-		width: 80%;
-		padding: 15px;
-		border-radius: 10px;
-		outline: none;
-		font-size: 15px;
-	}
-
-	.form-submit {
-		width: 50%;
-		height: 50px;
-		border-radius: 10px;
-		border: none;
-		color: #FFF;
-		font-family: "NunitoSans-Bold";
-		font-size: 15px;
-		text-transform: uppercase;
-		cursor: pointer;
-	}
-
-.loginmodel:target {
 	
-    visibility: visible;
-    opacity: 1;
-}
-
-
-
-
-.close {
-		height: 45px;
-		width: 45px;
+	.loginmodel:target {
+		visibility: visible;
+		opacity: 1;
+	}
+	
+	.popup {
+		border-radius: 20px;
+		border: var(--clr-neon) 1px solid;
+		margin: 200px auto;
+		padding: 30px;
+		background: rgb(0, 0, 0);
+		border-radius: 5px;
+		width: 35%;
+		position: relative;
+		transition: all 1.5s ease-in-out;
+	}
+	
+	.popup h2 {
+		display: flex;
+		justify-content: center;
+		margin: 10px auto;
+		color: rgb(255, 255, 255);
+		font-family: Tahoma, Arial, sans-serif;
+	}
+	
+	.popup .close {
 		position: absolute;
-		right: 20px;
 		top: 20px;
-		font-size: 1.5rem;
+		right: 30px;
+		transition: all 200ms;
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		color:rgb(90, 20, 255);
+	}
+	
+	.popup .close:hover {
+		color:rgba(255, 255, 255, 0.6);
+	}
+	
+	.popup .content {
+		display: flex;
+		justify-content: center;
+		overflow: auto;
+	}
+	.bts-login{
+		margin: 20px;
+		display: flex;
+	}
+
+	.lb-senha{
+		
+		margin: 30px auto;
 		color: white;
-		background-color: inherit;
-		border: none;
-		outline: none;
-		cursor: pointer;
-}
+		text-align: center;
+	}
+
+	
+
+	.form-v-001{
+		margin: 10px auto;
+		width: 100%;
+		height: 30px;	
+     	border:solid rgb(90, 20, 255);
+		 border-radius: 10px;
+	}
+	@media screen and (max-width: 700px) {
+		.box {
+			width: 70%;
+		}
+		.popup {
+			width: 70%;
+		}
+	}
 
 
 
@@ -486,25 +509,48 @@ select{
 
 
 .containercard{
-    position: absolute;
+    position: relative;
     display:flex;
-     align-items: center;
-    
-    
+    align-items: center;
+	justify-content: center;
+	max-width: 1200px;
+	flex-wrap: wrap;
+	z-index: 1;
 }
-
-.containercard .cardi{
+ .cardi{
 position:relative;
 width: 280px;
 height: 400px;
 margin: 30px;
-box-shadow: 20px 20px 50px rgb(0,0,0,0.5);
+box-shadow: 15px 15px 50px rgba(97, 97, 97, 0.389);
 border-radius: 15px;
-background: rgba(255, 255, 255, 0.932);
-
-
+background-image: url("https://th.bing.com/th/id/OIP.AjsG3POITA0lgVleK-CxFgHaJQ?pid=ImgDet&rs=1");
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+border-top: 1px solid rgb(188, 188, 188);
+}
+.containercard .cardi:hover .contentcard{
+	transform: translatey(0px);
+	opacity: 1;
 }
 
+.cardes{
+	display: flex;
+}
+
+
+.button-scroll{
+border-radius: 100%;
+padding: 15px;
+background-color: transparent;
+color: rgb(255, 255, 255);
+border: var(--clr-neon) 2px solid;
+box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+}
 
 
 
