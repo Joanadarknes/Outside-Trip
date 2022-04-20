@@ -551,11 +551,14 @@ text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 
 }
 /* SOBRE NÓS */
-
+.SobreNos-cd{
+display: flex;
+margin: 50px auto;
+}
 
 .cardee
 {
-	
+	background-image: url("https://images.unsplash.com/photo-1649608118930-70b0a62cdf62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -573,7 +576,7 @@ text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
     -22px -22px 50px rgba(0, 0, 0, 0.1);
     z-index: 2;
 }
-.carddddddddd .imgBx 
+.imgBx 
 {
     width: 175px;
     height: 175px;
@@ -591,20 +594,20 @@ text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
     object-fit: cover;
     width: 100%;
 }
-.card .profile-name
+ .profile-name
 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 1.5rem;
 }
-.carddddddddd .profile-actions
+.profile-actions
 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
 }
-.carddddddddd .profile-actions > *
+.profile-actions > *
 {
     margin: 0 0.25rem;
 }
@@ -622,7 +625,7 @@ text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 }
 .btn-primary
 {
-    background-image: linear-gradient(135deg, #5587ff, #3772ff);
+    background-image: linear-gradient(135deg, #5587ff, rgb(90, 20, 255));
     padding: 0 1.375rem;
     border-radius: 99em;
     color: #fff;
@@ -643,6 +646,15 @@ text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 .btn-icon:hover
 {
     border: 3px solid #ffffff;
+}
+
+.profile-actions{
+display: flex;
+}
+
+.user-handle{
+	font-size: 15px;
+	color: rgb(108, 87, 245) ;
 }
 
 
