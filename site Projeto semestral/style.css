@@ -361,10 +361,11 @@
 	}
 	.overlay{
 		visibility: hidden;
+		transition: opacity 0.5s ease;
 	}
 	.slide-img:hover .overlay{
 		visibility: visible;
-		animation:fade 0.5s;
+		opacity: 1;
 	}
 	 
 	@keyframes fade{
