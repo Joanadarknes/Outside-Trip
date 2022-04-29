@@ -407,9 +407,6 @@
 		z-index: 1;
 	}
 
-
-
-	
 	.loginmodel:target {
 		visibility: visible;
 		opacity: 1;
@@ -540,7 +537,7 @@
 	
 }
 .slogan-cards{
-	color: white;
+	color: rgb(0, 0, 0);
 	text-align: center;
 	margin: 10px auto;
 	font-size: 30px;
