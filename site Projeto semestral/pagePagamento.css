@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
+    background-color:#6b63ffc1;
 }
 
 .container {
@@ -22,6 +22,7 @@ body {
     height: 90vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+   
 }
 
 .form-image {
@@ -44,7 +45,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background: white;
     padding: 3rem;
 }
 
