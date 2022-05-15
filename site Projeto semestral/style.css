@@ -662,6 +662,71 @@ inset 0 0 .5em .25em var(--glow-color);
 /* SOBRE NÓS */
 
 
+.cardsn {
+	height: 250px;
+	width: 300px;
+	position: relative;
+	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	border-radius: 1em;
+	box-shadow: 0 0 10px 1px #616161;
+	margin-bottom: 100px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 10px;
+	
+	
+	
+   }
+   
+	/*Image*/
+   .cardsn-imagesn {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+   }
+   .cardsn-imagesn img {
+	height:250px;
+	width:800 px;
+	border-radius: 1em;
+	
+   }
+   
+   /*Description */
+   .card-descriptionsn {
+	display: flex;
+	position: absolute;
+	gap: 1em;
+	flex-direction: column;
+	background-color: #f8f4ef;
+	height: 30%;
+	bottom: 0;
+	border-radius: 1em ;
+	transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+	padding: 1rem;
+   }
+ a mas tem estar bonito
+   /*Text*/
+   .text-titlesn {
+	font-size: 1.4em;
+	font-weight: 700;
+	color:rgb(5, 5, 5)
+   }
+   
+   .text-bodysn {
+	font-size: 1em;
+	line-height: 150%;
+	color:rgb(2, 2, 2)
+   }
+   
+   
+   /* Hover states */
+   
+   .cardsn:hover .card-descriptionsn {
+	transform: translateY(100%);
+   }
+
 /* cards de hoteis */
 
 .card-hotel{
@@ -878,7 +943,6 @@ font-size: 30px;
 		display: flex;
 		margin: unset;
 }
-
 
 
 @media screen and (max-width: 700px) {
