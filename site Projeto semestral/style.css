@@ -755,8 +755,19 @@ inset 0 0 .5em .25em var(--glow-color);
 	border-top-right-radius: 16px ;
    }
 
+   .menu-mobile{
+		  display: none;
+		 
+	}
 
-
+	.menu-toggle{
+		color: white;
+	}
+	.aside-menu {
+		display:none;
+	}
+	
+	
 
 
 
@@ -766,23 +777,55 @@ inset 0 0 .5em .25em var(--glow-color);
 
 @media screen and (max-width: 700px) {
 
- 
-	.menu-mobile{
-		visibility: hidden;
-		background: black;
-		position: fixed;
+	.menu-mobile li{
+		list-style-type: none;
+		padding: 20px;
+		font-size: 20px;
+       }
+	   
+	   .fechar-menu{
+		font-size: 20px;
+    	font-weight: bold;
+    	border-radius: 20px;
+    	background:#ffcaa6;
+		border: 0;
+		
+    	padding: 5px 20px;
+	   }
+	   .menu-mobile{
+		visibility: unset;
+		width: 200px;
 		right: 0;
-		top: 0px;
-		padding-top: 9px;
+		position: absolute;
+		background: rgba(0, 0, 0, 0.775);
 		height: 100vh;
-		width: 0;
-		transition: all 0.5s ease;
-		overflow-x: hidden;
-		overflow-y: scroll;
+		display: block;
 		z-index: 2;
-	
+       }
+	   
+	   .aside-menu{
+		display:flex;
+	   background: none;
+	   color: white;
+	   border: 0;
+	   font-size: 30px;
+
 	   }
 
+	   .aside-fechar{
+		border-bottom: 1px solid #FFFFFF;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding-bottom: 14px;
+	   }
+
+
+
+	   .cardes{
+		display: unset;
+		margin-bottom: 50px;
+		}
 
 
 nav ul{
