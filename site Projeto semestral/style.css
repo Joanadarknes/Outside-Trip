@@ -69,6 +69,15 @@
 		text-transform: uppercase;
 		font-size: 1.6rem;
 	}
+
+	.menu-sb{
+		box-shadow: 0px 0px 54px 0px rgb(0 0 0 / 25%);
+		margin-top: -20px;
+		padding: 20px 0;
+		background:rgb(37, 37, 37);
+	}
+
+
 	
 	.brand{
 		font-size: 3rem;
@@ -142,8 +151,7 @@
 	transform-origin: right;
 	}
 	.Selecionar{
-		margin: 55px;
-		padding-bottom: 10px;
+		padding: 28px 158px;
 	}
 	
 	.origem{
@@ -190,6 +198,7 @@
 	.neons {
 		margin: 10px;
 		width: 180px;
+		height: 45px;
 		font-size: 25px;
 		justify-content: center;
 		align-items: center;
@@ -211,12 +220,12 @@
 
 
 	.Slogan{
-	margin-left: 50px;
+	
     font-size: 70px;
 	color: rgba(255, 255, 255, 0.767);
 	}
 	.Slogan2{
-		margin-left: 50px;
+		
 		font-size: 70px;
 		color:   #ffcaa6;
 	}
@@ -661,6 +670,19 @@ inset 0 0 .5em .25em var(--glow-color);
 
 /* SOBRE NÓS */
 
+.Sb-nós{
+
+text-align: center;
+font-size: 34px;
+
+}
+
+.SobreNos-cd{
+	width: 78%;
+}
+
+
+
 
 .cardsn {
 	height: 250px;
@@ -673,7 +695,6 @@ inset 0 0 .5em .25em var(--glow-color);
 	display: inline-block;
 	margin-left: 10px;
 	margin-top: 25px;
-	
 	
 	
    }
@@ -726,6 +747,17 @@ inset 0 0 .5em .25em var(--glow-color);
    .cardsn:hover .card-descriptionsn {
 	transform: translateY(100%);
    }
+
+   .sb-empresa{
+	background: #f7f7f7;
+	padding: 35px 50px;
+	max-width: 1200px;
+	margin: 20px auto;
+	box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+	 border-radius: 5px;
+   }
+
+
 
 /* cards de hoteis */
 
@@ -812,16 +844,71 @@ inset 0 0 .5em .25em var(--glow-color);
    }
    
    footer{
-    position: relative;
-    box-shadow: 0px 0px 54px 0px rgb(0 0 0 / 25%);
-    margin-top: -44px;
-    padding-top: 150px;
-    border-top-left-radius:  16px ;
-	border-top-right-radius: 16px ;
-   }
+		background: white;
+		box-shadow: 0px 0px 54px 0px rgb(0 0 0 / 25%);
+		margin-top: -44px;
+		padding: 20px 0;
+		border-top-left-radius: 16px;
+		border-top-right-radius: 16px;
+		display: flex;
+	
+	}
+   
+
+   footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+footer div.social-media a {
+    color: #333;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    background: #EFEFEF;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+	margin-right: 16px;
+}
+
+footer div.social-media a:hover{
+	background:#ffcaa6;
+	
+}
+ 
+footer div img {
+    margin-right: 8px;
+}
+
+
+footer div.social-media{
+	padding-bottom: 10px;
+}
+
+#CopyrightFooter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 
 
+
+   .menu-mobile{
+		  display: none;
+		 
+	}
+
+	.menu-toggle{
+		color: white;
+	}
+	.aside-menu {
+		display:none;
+	}
+	
+	
 
 
 
@@ -831,23 +918,55 @@ inset 0 0 .5em .25em var(--glow-color);
 
 @media screen and (max-width: 700px) {
 
- 
-	.menu-mobile{
-		visibility: hidden;
-		background: black;
-		position: fixed;
+	.menu-mobile li{
+		list-style-type: none;
+		padding: 20px;
+		font-size: 20px;
+       }
+	   
+	   .fechar-menu{
+		font-size: 20px;
+    	font-weight: bold;
+    	border-radius: 20px;
+    	background:#ffcaa6;
+		border: 0;
+		
+    	padding: 5px 20px;
+	   }
+	   .menu-mobile{
+		visibility: unset;
+		width: 200px;
 		right: 0;
-		top: 0px;
-		padding-top: 9px;
-		height: 100vh;
-		width: 0;
-		transition: all 0.5s ease;
-		overflow-x: hidden;
-		overflow-y: scroll;
+		position: absolute;
+		background: rgba(0, 0, 0, 0.775);
+		height: 400vh;
+		display: block;
 		z-index: 2;
-	
+       }
+	   
+	   .aside-menu{
+		display:flex;
+	   background: none;
+	   color: white;
+	   border: 0;
+	   font-size: 30px;
+
 	   }
 
+	   .aside-fechar{
+		border-bottom: 1px solid #FFFFFF;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding-bottom: 14px;
+	   }
+
+
+
+	   .cardes{
+		display: unset;
+		margin-bottom: 50px;
+		}
 
 
 nav ul{
@@ -860,7 +979,7 @@ nav ul{
 
 .Slogan{
 font-size: 30px;
-margin-top: -50px;
+
 }
 .Slogan2{
 font-size: 30px;
@@ -868,7 +987,8 @@ font-size: 30px;
 
 .Selecionar{
 	margin: 10px;
-	padding-bottom: 100px;
+	padding: 0;
+	
 }
 .chamadopsg{
 	font-size: 30px;

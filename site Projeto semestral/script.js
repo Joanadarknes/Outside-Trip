@@ -1,9 +1,9 @@
 const filtrarMobile = document.querySelector('.menu-mobile');
-const fecharMenu = document.querySelector('#closeMobile');
-const AbrirFiltro = document.querySelector('#AbrirFiltro')
-AbrirFiltro.addEventListener('click', function () {
+const fecharMenu = document.querySelector('.fechar-menu');
+const Abrirmenu = document.querySelector('.aside-menu')
+Abrirmenu.addEventListener('click', function () {
   filtrarMobile.style.visibility = 'visible';
-  filtrarMobile.style.width = '100%';
+  filtrarMobile.style.width = '90%';
 
 
 });
