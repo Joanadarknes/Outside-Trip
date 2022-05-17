@@ -669,10 +669,10 @@ inset 0 0 .5em .25em var(--glow-color);
 	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 	border-radius: 1em;
 	box-shadow: 0 0 10px 1px #616161;
-	margin-bottom: 100px;
+	margin-bottom: 90px;
 	display: inline-block;
 	margin-left: 10px;
-	margin-top: 10px;
+	margin-top: 25px;
 	
 	
 	
@@ -684,7 +684,7 @@ inset 0 0 .5em .25em var(--glow-color);
 	width: 100%;
 	position: absolute;
 	transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-
+	
    }
    .cardsn-imagesn img {
 	height:250px;
@@ -706,7 +706,7 @@ inset 0 0 .5em .25em var(--glow-color);
 	transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 	padding: 1rem;
    }
- a mas tem estar bonito
+
    /*Text*/
    .text-titlesn {
 	font-size: 1.4em;
