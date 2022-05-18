@@ -79,13 +79,27 @@
                     </nav>
                     <form>
                     <section class="Selecionar">
-                    <div>
+                      <div class="OD">
+                        <label class="origem" for="text">Origem:</label>
+                        <label class="destino" for="text">Destino:</label>
+                      </div>
+
+
+
+
+                    <div class="ODDD">
                     <label class="origem" for="text">Origem:</label>
                     <label class="destino" for="text">Destino:</label>
                     <label class="dataID" for="data">Data de ida:</label>
                     <label class="dataID" for="data">Data de volta:</label></div>
                     <input  type="text" placeholder="De onde vai Sair?" name="nome" required>
                     <input  type="text"  placeholder="Para onde você vai?">
+                      <div class="DD">
+                        <label class="dataID" for="data">Data de ida:</label>
+                        <label class="dataID" for="data">Data de volta:</label>
+                      </div>
+
+
                     <input type="date" id="data" name="dataIda">
                     <input type="date" id="data" name="dataVolt">
                     <select name="format" id="format" >
@@ -129,7 +143,7 @@
 
 
       <div class="passagens-splide">
-        <h2 class="chamadopsg" id="passagem">Ofertas imperdíveis de voos internacionais</h2>
+        <h2 class="chamadopsg" id="passagem">Passagens de voos internacionais para lugares incríveis</h2>
         <div class="splide" >
             <div class="splide__track">
               <ul class="splide__list">
@@ -302,7 +316,7 @@
                     </p>
                 </div>
                 <div class="caaaard-footer">
-                <span class="texttt-title">Por 2.800<br>
+                <span class="texttt-title">Por 2.800</span>
                      
                 <div class="caaaard-button">
                   <svg class="svg-icon" viewBox="0 0 20 20">
@@ -441,7 +455,7 @@
                                 <h3>Cliente:</h3>
                                 <p> Todo mundo adora dar um cochilo durante o voo e por isso nossa empresa pensou em presentear nossos clientes com a Almofada de Pescoço, o uso desse item tem como principal objetivo impedir que a cabeça “caia” ao pegar no sono durante a viagem, dessa forma, mantendo-a em uma posição mais confortável. Como também ganha Fone de Ouvido, Cobertor Manta e Necessaire. 
                                 </p>
-                                <button class= "bt-maisif" ><a href="#">mais infomaçoes</a></button>
+                                <button class= "bt-maisif" ><a href="./MaisInformações.html">mais infomaçoes</a></button>
                             </div>                  
                             </section>
                             </div>
@@ -452,7 +466,7 @@
 
 
                             <footer>
-                              <div style="width: 26%;">
+                              <div class="top-footer">
                                 <h4>Formas de pagamento</h4>
                                 <img src="https://www.cvc.com.br/imageproc/image/upload/v1/global/logos/cards/visa.svg" alt="Visa">
                                 <img src="https://www.cvc.com.br/imageproc/image/upload/v1/global/logos/payments/mastercard.svg" alt="Mastercard">
@@ -491,30 +505,10 @@
                     </script>
 
                      
-                             <!--ANIMAÇÃO PASSAGENS -------->
+             
        
                      </body>
 
-                    <script>
-                    var splide = new Splide( '.splide', {
-                    type    : 'loop',
-                    perPage : 3,
-                    autoplay: true,
-                     } );
-      
-                    splide.mount();
-                    </script>
-
-                             <!--ANIMAÇÃO BOTÃO UP -------->
-                
-                    <script>
-                    function scrolltop(){
-                    window.scrollTo({
-                    top:0,
-                    behavior: 'smooth'
-                    })
-                     }
-                    </script>
        <script src="./script.js"></script>
 </html>
 
