@@ -16,7 +16,13 @@ body{
     }
     
     .SobreNos-cd{
-        width: 78%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 245px;
+    grid-gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 20px;
     }
     
     
@@ -69,6 +75,7 @@ body{
         border-radius: 1em ;
         transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
         padding: 1rem;
+        z-index: 100;
        }
     
        /*Text*/

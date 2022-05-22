@@ -32,4 +32,13 @@ var splide = new Splide( '.splide', {
   behavior: 'smooth'
   })
    }
+
+
+   VanillaTilt.init(document.querySelectorAll(".cardi"), {
+     max: 25,
+     speed: 400,
+     glare: true,
+     "max-glare": 1,
+   });
+
    
