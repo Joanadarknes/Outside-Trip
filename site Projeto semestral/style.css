@@ -430,6 +430,7 @@ a {
 }
 
 .splide__track {
+	max-width: 880px;
 	padding-bottom: 10px;
 }
 
@@ -571,11 +572,10 @@ a {
 }
 
 .slogan-cards {
-
+	color: #999;
+	padding-top: 20px;
+	font-size: 40px;
 	text-align: center;
-	margin: 10px auto;
-	font-size: 30px;
-	text-transform: uppercase;
 }
 
 .contentcard h2 {
@@ -638,7 +638,7 @@ a {
 
 .cardi {
 	position: relative;
-	width: 280px;
+	width: 320px;
 	height: 400px;
 	margin: 30px;
 	border-radius: 15px;
@@ -692,6 +692,14 @@ a {
 }
 
 /* cards de hoteis */
+
+
+.text-hotel {
+	color: #999;
+	padding-top: 20px;
+	font-size: 43px;
+	text-align: center;
+}
 
 .card-hotel {
 	display: flex;
@@ -778,20 +786,14 @@ svg {
 
 footer {
 	background: white;
-	box-shadow: 0px 0px 54px 0px rgb(0 0 0 / 25%);
+	box-shadow: rgb(0 0 0 / 25%) 0px 0px 54px 0px;
 	margin-top: -44px;
-	padding: 20px 0;
+	padding: 20px 0px;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
-	background: white;
-    box-shadow: rgb(0 0 0 / 25%) 0px 0px 54px 0px;
-    margin-top: -44px;
-    padding: 20px 0px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 
@@ -853,8 +855,10 @@ footer div.social-media {
 
 
 .top-footer {
-	width: 15%;
+
+	width: 60%;
 }
+
 
 .OD {
 	display: none;
@@ -876,7 +880,6 @@ footer div.social-media {
 
 	.OD {
 		display: unset;
-		padding: 0 15px;
 
 	}
 
@@ -900,12 +903,12 @@ footer div.social-media {
 	}
 
 	#CopyrightFooter {
-
+		font-size: 10px;
 		order: 3;
 	}
 
 	footer {
-
+		grid-template-columns: 1fr;
 		flex-direction: column;
 	}
 
@@ -964,7 +967,7 @@ footer div.social-media {
 	form input,
 	form textarea {
 		height: 40px;
-		width: 162px;
+		width: 154px;
 		outline: unset;
 		border: var(--clr-neon) 2px solid;
 		margin: 10px 0px 10px 6px;
@@ -1088,34 +1091,40 @@ footer div.social-media {
 		transition: all 0.5s;
 		padding: 9px 15px;
 	}
-
-
-.bts-login {
-	display: flex;
-	margin: unset;
-}
-
-.form-v-001 {
-	margin: 10px auto;
-	width: 96%;
-	height: 30px;
-	border: solid #ffcaa6;
-	border-radius: 10px;
-}
-
-.box {
-	width: 70%;
-}
-
-.popup {
-	width: 70%;
-}
-
-@media screen and (max-width: 250px) {
-
-	.menu-toggle {
-		display: block;
+	.text-hotel {
+		color: #999;
+		padding-top: 20px;
+		font-size: 18px;
+		text-align: center;
 	}
 
-}
+
+	.bts-login {
+		display: flex;
+		margin: unset;
+	}
+
+	.form-v-001 {
+		margin: 10px auto;
+		width: 96%;
+		height: 30px;
+		border: solid #ffcaa6;
+		border-radius: 10px;
+	}
+
+	.box {
+		width: 70%;
+	}
+
+	.popup {
+		width: 70%;
+	}
+
+	@media screen and (max-width: 250px) {
+
+		.menu-toggle {
+			display: block;
+		}
+
+	}
 }
