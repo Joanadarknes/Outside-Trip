@@ -638,7 +638,7 @@ a {
 
 .cardi {
 	position: relative;
-	width: 320px;
+	width: calc(80vw / 4);
 	height: 400px;
 	margin: 30px;
 	border-radius: 15px;
@@ -658,7 +658,7 @@ a {
 .cardes {
 	display: flex;
 	margin-bottom: 50px;
-	overflow-x: hidden;
+	
 }
 
 .button-scroll {
